@@ -4,12 +4,12 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
-	<name>angularapp - Reactor</name>
+	<name>angularee - Reactor</name>
 	<description>Angular app on top of a Java EE 8 backend.</description>
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>pro.requena</groupId>
-	<artifactId>angularapp</artifactId>
+	<artifactId>angularee</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
@@ -41,14 +41,14 @@
 			<!-- Project modules -->
 			<dependency>
 				<groupId>pro.requena</groupId>
-				<artifactId>angularapp-ejb</artifactId>
+				<artifactId>angularee-ejb</artifactId>
 				<version>${project.version}</version>
 				<type>ejb</type>
 				<scope>compile</scope>
 			</dependency>
 			<dependency>
 				<groupId>pro.requena</groupId>
-				<artifactId>angularapp-web</artifactId>
+				<artifactId>angularee-web</artifactId>
 				<version>${project.version}</version>
 				<type>war</type>
 				<scope>compile</scope>
@@ -99,9 +99,9 @@
 				<activeByDefault>true</activeByDefault>
 			</activation>
 			<modules>
-				<module>angular-ejb</module>
-				<module>angular-web</module>
-				<module>angular-ear</module>
+				<module>angularee-ejb</module>
+				<module>angularee-web</module>
+				<module>angularee-ear</module>
 			</modules>
 		</profile>
 
@@ -109,7 +109,7 @@
 		<profile>
 			<id>frontend</id>
 			<modules>
-				<module>angular-frontend</module>
+				<module>angularee-frontend</module>
 			</modules>
 		</profile>
 	</profiles>
